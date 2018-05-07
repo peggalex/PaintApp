@@ -72,7 +72,7 @@ public class Scribble extends Shape{
 	
 	public Point[] getPointsOnLine(Point origin, Point endPoint) {
 		int width = Math.abs(endPoint.getX()-origin.getX());
-		int height = Math.abs(endPoint.getX()-origin.getX());
+		int height = Math.abs(endPoint.getY()-origin.getY());
 		int size = Math.max(width, height);
 		if (size==0) {
 			return null;
